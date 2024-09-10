@@ -4,6 +4,8 @@
 }
 body {
     background: #fcfcfc;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Para evitar el desplazamiento de la página */
 }
 .contenedor {
     margin: 0 auto;
@@ -15,6 +17,13 @@ body {
 .titulo {
     margin-bottom: 20px;
 }
+.opciones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative; /* Necesario para el posicionamiento absoluto de los elementos hijos */
+}
 .opciones p {
     background: black;
     display: inline-block;
@@ -22,23 +31,20 @@ body {
     color: #ffffff;
     border-radius: 3px;
     font-weight: bold;
-    margin: 10px;
-}
-p.p1, p.p2 {
-    position: relative;
-    width: auto;
-    top: auto;
-    left: auto;
-}
-p.p1:hover, p.p2:hover {
-    background: grey;
     cursor: pointer;
+    user-select: none;
+    margin: 10px;
+    font-size: 1.2em;
+    position: absolute; /* Para permitir el movimiento */
+}
+.opciones p:hover {
+    background: grey;
 }
 #si {
     background: #515050;
     color: #ffffff;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 50px; /* Aumentar el margen superior para que no se superponga */
     display: none;
     border-radius: 3px;
 }
