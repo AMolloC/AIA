@@ -18,7 +18,7 @@
     top: 0; /* Alineado a la parte superior */
     left: 0; /* Comienza desde la izquierda */
     z-index: 10; /* Asegura que esté por encima de otros elementos */
-    width: auto; /* Ancho automático para el texto */
+    width: 100%; /* Ancho automático para el texto */
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
     animation: slide 20s linear infinite; /* Llama a la animación */
 }
@@ -41,16 +41,24 @@
     margin: 0 auto; /* Centra el GIF horizontalmente */
     width: 150px; /* Ajusta el tamaño según lo desees */
     height: auto; /* Mantiene la proporción del GIF */
-    z-index: 5;
+    z-index: 10;
     position: absolute; /* Permite posicionar el GIF de manera absoluta */
     top: 90px; /* Ajusta este valor para mover el GIF hacia arriba o abajo */
     left: 55%; /* Centra horizontalmente */
-}
+    transform: translateX(-100%);
+    }
+    audio {
+            position: absolute; /* Permite que el audio no afecte el flujo de otros elementos */
+            top: 150px; /* Ajusta este valor según sea necesario */
+            left: 50%; /* Centra horizontalmente */
+            transform: translateX(-50%); /* Ajuste para centrar el audio */
+            /* z-index: 5; */
+        }
     </style>
 </head>
 
 <body>
-  <!-- partial:index.partial.html -->
+  
   <body class="container">
     <div class="message">
     Que tengas un feliz día, te quiero mucho Ale
@@ -58,8 +66,7 @@
     <img src="img/polar.gif" alt="GIF de un oso polar" class="small-gif" >
     <audio controls autoplay loop>
       <source src="img/Floricienta.mp3" type="audio/mp3">
-    </audio>
-
+      </audio>
     <div class="night"></div>
     <div class="flowers">
       <div class="flower flower--1">
