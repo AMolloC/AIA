@@ -7,9 +7,38 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
     <title>FLORES</title>
+    <style>
+    .message {
+    text-align: center; /* Centra el texto */
+    font-size: 24px; /* Tamaño de fuente */
+    color: #ffffff; /* Color del texto */
+    background-color: rgba(0, 0, 0, 0.0); /* Fondo semi-transparente */
+    padding: 10px; /* Espaciado interno */
+    position: fixed; /* Fijo para que esté siempre en la parte superior */
+    top: 0; /* Alineado a la parte superior */
+    left: 100%; /* Comienza fuera de la pantalla a la derecha */
+    transform: translateX(-100%); /* Ajuste para centrar */
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
+    width: auto; /* Ancho automático para el texto */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    animation: slide 30s linear infinite; /* Llama a la animación */
+}
+
+@keyframes slide {
+    0% {
+        left: 100%; /* Comienza fuera de la pantalla a la derecha */
+    }
+    100% {
+        left: -100%; /* Termina fuera de la pantalla a la izquierda */
+    }
+}
+    </style>
 </head>
 
 <body class="container">
+    <div class="message">
+    Que tengas un feliz día, te quiero mucho Ale
+    </div>
     <div class="night"></div>
     <div class="flowers">
       <div class="flower flower--1">
