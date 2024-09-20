@@ -8,7 +8,8 @@
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
     <title>FLORES</title>
     <style>
-    .message {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+    .greetings {
     text-align: center; /* Centra el texto */
     font-size: 18px; /* Tamaño de fuente */
     color: #ffffff; /* Color del texto */
@@ -54,14 +55,52 @@
             transform: translateX(-50%); /* Ajuste para centrar el audio */
             /* z-index: 5; */
         }
+
+
+    .greetings{
+    font-size: 1rem;
+    font-weight: 900;
+}
+.greetings > span{
+    animation: glow 3s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 12px #fbff00, 0 0 50px #fbff00, 0 0 100px #fbff00;
+    }
+    10%, 90%{
+        color: #696565;
+        text-shadow: none;
+    }
+}
+.greetings > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.greetings > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.greetings > span:nth-child(4){
+    animation-delay: .6s;
+}
+.greetings > span:nth-child(5){
+    animation-delay: .8s;
+}
+@media screen and (max-width:574px){
+    .greetings{
+        display: block;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
     </style>
 </head>
 
 <body>
   
   <body class="container">
-    <div class="message">
-    Que tengas un feliz día, te quiero mucho Ale
+    <div class="greetings">
+    <span>Te conoci sin saber que te iba queria tanto, cada momento que pase a tu lado fue un regalo que nunca supe que necesitada FELIZ DIA DEL AMOR Y LA AMISTAD TE QUIERO MUCHO <3</span>
     </div>
     <img src="img/polar.gif" alt="GIF de un oso polar" class="small-gif" >
     <audio controls autoplay loop>
