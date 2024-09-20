@@ -8,7 +8,6 @@
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
     <title>FLORES</title>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
     .greetings {
     text-align: center; /* Centra el texto */
     font-size: 15px; /* Tamaño de fuente */
@@ -19,14 +18,14 @@
     top: 0; /* Alineado a la parte superior */
     left: 0; /* Comienza desde la izquierda */
     z-index: 10; /* Asegura que esté por encima de otros elementos */
-    width: 100%; /* Ancho automático para el texto */
+    width: 0 auto; /* Ancho automático para el texto */
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    animation: slide 40s linear infinite; /* Llama a la animación */
+    animation: slide 30s linear infinite; /* Llama a la animación */
 }
 
 @keyframes slide {
     0% {
-        transform: translateX(50%); /* Comienza fuera de la pantalla a la derecha */
+        transform: translateX(30%); /* Comienza fuera de la pantalla a la derecha */
     }
     50% {
         transform: translateX(0); /* Se centra en la pantalla */
