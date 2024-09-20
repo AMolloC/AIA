@@ -11,7 +11,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
     .greetings {
     text-align: center; /* Centra el texto */
-    font-size: 18px; /* Tamaño de fuente */
+    font-size: 15px; /* Tamaño de fuente */
     color: #ffffff; /* Color del texto */
     background-color: rgba(0, 0, 0, 0.0); /* Fondo semi-transparente */
     padding: 10px; /* Espaciado interno */
@@ -26,7 +26,7 @@
 
 @keyframes slide {
     0% {
-        transform: translateX(100%); /* Comienza fuera de la pantalla a la derecha */
+        transform: translateX(50%); /* Comienza fuera de la pantalla a la derecha */
     }
     50% {
         transform: translateX(0); /* Se centra en la pantalla */
@@ -56,44 +56,11 @@
             /* z-index: 5; */
         }
 
-
-    .greetings{
-    font-size: 1rem;
-    font-weight: 900;
+.greetings > span {
+    color: #fff; /* Color del texto */
+    text-shadow: 0 0 12px #fbff00, 0 0 50px #fbff00, 0 0 100px #fbff00; /* Efecto de resplandor */
 }
-.greetings > span{
-    animation: glow 3s ease-in-out infinite;
-}
-@keyframes glow{
-    0%, 100%{
-        color: #fff;
-        text-shadow: 0 0 12px #fbff00, 0 0 50px #fbff00, 0 0 100px #fbff00;
-    }
-    10%, 90%{
-        color: #696565;
-        text-shadow: none;
-    }
-}
-.greetings > span:nth-child(2){
-    animation-delay: .2s ;
-}
-.greetings > span:nth-child(3){
-    animation-delay: .4s ;
-}
-.greetings > span:nth-child(4){
-    animation-delay: .6s;
-}
-.greetings > span:nth-child(5){
-    animation-delay: .8s;
-}
-@media screen and (max-width:574px){
-    .greetings{
-        display: block;
-        font-size: 3rem;
-        font-weight: 500;
-        text-align: center;
-    }
-    </style>
+  </style>
 </head>
 
 <body>
