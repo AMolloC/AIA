@@ -33,6 +33,19 @@
     100% {
         transform: translateX(-100%); /* Termina fuera de la pantalla a la izquierda */
     }
+  }
+
+
+.small-gif {
+    display: block; /* Para que el GIF esté en su propia línea */
+    margin: 0 auto; /* Centra el GIF horizontalmente */
+    width: 150px; /* Ajusta el tamaño según lo desees */
+    height: auto; /* Mantiene la proporción del GIF */
+    z-index: 10;
+    position: absolute; /* Permite posicionar el GIF de manera absoluta */
+    top: 50px; /* Ajusta este valor para mover el GIF hacia arriba o abajo */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajuste para centrar */
 }
     </style>
 </head>
@@ -41,6 +54,7 @@
     <div class="message">
     Que tengas un feliz día, te quiero mucho Ale
     </div>
+          <img src="img/polar.gif" alt="GIF de un oso polar" class="small-gif" style="width: 150px; height: 150px;">
     <div class="night"></div>
     <div class="flowers">
       <div class="flower flower--1">
