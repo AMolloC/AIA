@@ -18,23 +18,19 @@
     top: 0; /* Alineado a la parte superior */
     left: 0; /* Comienza desde la izquierda */
     z-index: 10; /* Asegura que esté por encima de otros elementos */
-    width: 0 auto; /* Ancho automático para el texto */
+    width: auto; /* Ancho automático para el texto */
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    animation: slide 60s infinite; /* Llama a la animación */
+    animation: slide 40s linear infinite; /* Llama a la animación */
 }
 
 @keyframes slide {
     0% {
-        transform: translateX(30%); /* Comienza fuera de la pantalla a la derecha */
-    }
-    50% {
-        transform: translateX(0); /* Se centra en la pantalla */
+        transform: translateX(100%); /* Comienza fuera de la pantalla a la derecha */
     }
     100% {
         transform: translateX(-100%); /* Termina fuera de la pantalla a la izquierda */
     }
-  }
-
+}
 
 .small-gif {
     display: block; /* Para que el GIF esté en su propia línea */
@@ -66,7 +62,7 @@
   
   <body class="container">
     <div class="greetings">
-    <span>Te conoci sin saber que te iba queria tanto, cada momento que pase a tu lado fue un regalo que nunca supe que necesitada FELIZ DIA DEL AMOR Y LA AMISTAD TE QUIERO MUCHO <3</span>
+    <span>Te conoci sin saber que te iba querer tanto, cada momento que pase a tu lado fue un regalo que nunca supe que necesitada FELIZ DIA DEL AMOR Y LA AMISTAD TE QUIERO MUCHO <3</span>
     </div>
     <img src="img/polar.gif" alt="GIF de un oso polar" class="small-gif" >
     <audio controls autoplay loop>
